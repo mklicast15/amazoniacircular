@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { createFileRoute } from '@tanstack/react-router'
 import listings from '@/data/listings'
 import type { Listing, PlasticType, Condition } from '@/data/listings'
@@ -14,6 +14,7 @@ export const Route = createFileRoute('/')({
 })
 
 function MarketplaceHome() {
+  console.log('MarketplaceHome render')
   const [search, setSearch] = useState('')
   const [selectedTypes, setSelectedTypes] = useState<PlasticType[]>([])
   const [selectedConditions, setSelectedConditions] = useState<Condition[]>([])
@@ -40,7 +41,7 @@ function MarketplaceHome() {
     setMaxPrice('')
   }
 
-  const filtered = listings.filter((l) => {
+  const filtered = useMemo(() => listings.filter((l) => {
     if (
       search &&
       !l.title.toLowerCase().includes(search.toLowerCase()) &&
@@ -54,7 +55,7 @@ function MarketplaceHome() {
     if (minQty && l.quantityKg < parseInt(minQty)) return false
     if (maxPrice && l.pricePerKg > parseFloat(maxPrice)) return false
     return true
-  })
+  }), [search, selectedTypes, selectedConditions, minQty, maxPrice])
 
   return (
     <main className="marketplace-main">

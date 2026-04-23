@@ -1,12 +1,12 @@
 import { jsxs, jsx } from "react/jsx-runtime";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "@tanstack/react-router";
-import { R as Route, l as listings, c as conditionLabels, p as plasticTypeLabels } from "./router-BbJrEQoA.js";
+import { R as Route, l as listings, c as conditionLabels, p as plasticTypeLabels } from "./router-DWFSow_W.js";
 import { C as ContactModal } from "./ContactModal-Bx-mmTO4.js";
 function ListingDetail() {
   const listing = Route.useLoaderData();
   const [contactOpen, setContactOpen] = useState(false);
-  const related = listings.filter((l) => l.plasticType === listing.plasticType && l.id !== listing.id).slice(0, 3);
+  const related = useMemo(() => listings.filter((l) => l.plasticType === listing.plasticType && l.id !== listing.id).slice(0, 3), [listing.plasticType, listing.id]);
   return /* @__PURE__ */ jsxs("main", { className: "detail-main", children: [
     /* @__PURE__ */ jsxs("div", { className: "detail-container", children: [
       /* @__PURE__ */ jsxs(Link, { to: "/", className: "back-link", children: [

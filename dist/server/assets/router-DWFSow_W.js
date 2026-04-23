@@ -96,10 +96,19 @@ const $$splitComponentImporter$4 = () => import("./anuncie-0jJ4HE5T.js");
 const Route$4 = createFileRoute("/anuncie")({
   component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-const $$splitComponentImporter$3 = () => import("./index-C7HaluOW.js");
+const $$splitComponentImporter$3 = () => import("./index-C9zOAmru.js");
 const Route$3 = createFileRoute("/")({
   component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
+const imgPet = "/assets/img-pet-B6UCTvZw.jpeg";
+const imgPp = "/assets/img-pp-D8p5kAxf.jpeg";
+const imgPead = "/assets/img-pead-yiGP1kHw.jpeg";
+const imgPebd = "/assets/materiais-pebd-DIBTTGo0.jpeg";
+const imgAbs = "/assets/img-abs-DGxHU-yL.jpeg";
+const imgPvc = "/assets/img-pvc-DHSSDDE7.jpeg";
+const imgPs = "/assets/img-ps-CdOjxOSM.jpeg";
+const imgNylon = "/assets/img-nylon-D_5GIrTl.jpeg";
+const imgAcrilico = "/assets/img-acrilico-yK-63HrY.jpeg";
 const sellers = [
   {
     id: 1,
@@ -206,7 +215,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 5200,
     pricePerKg: 1.2,
-    image: "/img-pet.jpeg",
+    image: imgPet,
     shortDescription: "PET cristal limpo, aparas de termoformagem. Sem contaminação. Adequado para extrusão de filamentos e embalagens.",
     description: "Aparas de PET transparente (cristal) provenientes de linha de termoformagem de indústria alimentícia no Polo Industrial de Manaus. Material 100% livre de PVC e outros contaminantes. Disponível a granel ou enfardado (fardos de ~500 kg). Análise de viscosidade disponível sob solicitação. Retirada no galpão ou entrega mediante frete acordado. Produção contínua de ~1.200 kg/semana.",
     seller: sellers[0],
@@ -220,7 +229,7 @@ const listings = [
     condition: "misto",
     quantityKg: 8300,
     pricePerKg: 0.85,
-    image: "/img-pp.jpeg",
+    image: imgPp,
     shortDescription: "Retalhos de PP injetado colorido (mix de cores), origem na indústria de duas rodas e eletroeletrônica da ZFM.",
     description: "Retalhos e canais de injeção de Polipropileno colorido provenientes de diversas fábricas do Polo Industrial. Mix de cores (predominância de preto, cinza e branco). Material não lavado mas sem contaminantes orgânicos. Adequado para moagem e repelotização com masterbach de cobertura. Disponível a granel. Volume médio disponível: 2 toneladas/mês.",
     seller: sellers[1],
@@ -234,7 +243,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 3400,
     pricePerKg: 1.45,
-    image: "/img-pead.jpeg",
+    image: imgPead,
     shortDescription: "PEAD natural (leitoso) de sopro, aparas de fabricação de galões e tambores industriais. Alta pureza.",
     description: "Aparas de PEAD de alta densidade natural provenientes de processo de sopro de galões de 5L e tambores de 20L em indústria química do PIM. Material limpo, separado na fonte, sem mistura de outros plásticos. Excelente para reciclagem direta ou mistura com PEAD virgem. Fardos de 400–600 kg. Frequência de geração: semanal. Disponibilidade de nota fiscal e MTRR.",
     seller: sellers[2],
@@ -248,7 +257,7 @@ const listings = [
     condition: "misto",
     quantityKg: 12800,
     pricePerKg: 0.65,
-    image: "/materiais-pebd.jpeg",
+    image: imgPebd,
     shortDescription: "Filme de polietileno de baixa densidade misto (stretch, sacaria, bag), geração industrial. Grande volume disponível.",
     description: "Filmes de PEBD provenientes de embalagens secundárias de indústrias eletrônicas e alimentícias da ZFM. Mix de stretch wrap transparente, sacaria BOPP e filmes impressos. Material prensado em fardos de ~300 kg. Teor de umidade controlado. Grande estoque disponível para compra imediata. Possibilidade de fornecimento contínuo (±3 ton/semana). Preço negociável para volumes acima de 10 toneladas.",
     seller: sellers[3],
@@ -262,7 +271,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 1600,
     pricePerKg: 2.1,
-    image: "/img-abs.jpeg",
+    image: imgAbs,
     shortDescription: "ABS preto de alta qualidade proveniente de rejeitos de carcaças de TVs e eletrodomésticos. Material técnico selecionado.",
     description: "Aparas e rejeitos de ABS preto provenientes de linha de injeção de carcaças de televisores e eletrodomésticos de grande fabricante da ZFM. Material selecionado, sem mistura de PS ou HIPS. Analisado por infravermelho (FTIR) com laudo disponível. Adequado para reciclagem técnica e reprocessamento. Disponível triturado (granulometria ~10mm) ou em aparas grandes. Volume mensal: ~400 kg.",
     seller: sellers[4],
@@ -276,7 +285,7 @@ const listings = [
     condition: "misto",
     quantityKg: 6900,
     pricePerKg: 0.75,
-    image: "/img-pvc.jpeg",
+    image: imgPvc,
     shortDescription: "PVC rígido de aparas de solado calçadista e perfis de janelas. Coloração mista (preto e cinza).",
     description: "Retalhos de PVC rígido oriundos de indústria calçadista e fabricação de esquadrias. Mix de PVC composto e não-plastificado. Cores predominantes: preto e cinza. Material não contaminado com PVC flexível. Adequado para moagem e re-extrusão para perfis. Disponível a granel em bags de 1000 kg (Big Bag). Geração contínua. Nota fiscal disponível com CFOP 5928.",
     seller: sellers[5],
@@ -290,7 +299,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 2500,
     pricePerKg: 1.05,
-    image: "/img-ps.jpeg",
+    image: imgPs,
     shortDescription: "PS cristal (poliestireno) limpo de aparas de termoformagem de descartáveis. Sem HIPS. Transparente.",
     description: "Aparas de poliestireno cristal (GPPS) provenientes de linha de termoformagem de copos e bandejas descartáveis. Material transparente, limpo, sem mistura com HIPS ou EPS. Enfardado em fardos de 200 kg. Alta fluidez, adequado para extrusão de filmes ou injeção de peças transparentes. Volume disponível: 2.500 kg. Geração quinzenal de ~600 kg.",
     seller: sellers[0],
@@ -304,7 +313,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 840,
     pricePerKg: 3.2,
-    image: "/img-nylon.jpeg",
+    image: imgNylon,
     shortDescription: "PA6 (Nylon 6) moído de rejeitos de peças automotivas e de duas rodas. Material técnico com alto valor agregado.",
     description: "Nylon 6 (Poliamida 6) proveniente de rejeitos de injeção de peças de motocicletas e componentes automotivos de fábricas do Polo Industrial. Material moído em granulometria de 6–8 mm. Umidade controlada (<0.3%). Laudo de identificação por FTIR disponível. Adequado para reprocessamento e mistura com PA6 virgem ou carga de fibra de vidro. Volume limitado: lote único de 840 kg. Consultar sobre próximos lotes.",
     seller: sellers[4],
@@ -318,7 +327,7 @@ const listings = [
     condition: "misto",
     quantityKg: 4600,
     pricePerKg: 0.9,
-    image: "/img-pp.jpeg",
+    image: imgPp,
     shortDescription: "Copolímero PP de canais e rejeitos de injeção de linha eletroeletrônica. Mix de peças diversas.",
     description: "Polipropileno copolímero (PPc) proveniente de canais de injeção e rejeitos de start-up de produção da indústria eletroeletrônica. Material não separado por cor (mix cinza, preto, bege). Sem mistura com PE ou ABS. Testado por flotação. Disponível a granel para retirada imediata. Volume médio: 1.000 kg/mês. Aceita-se proposta para contrato de fornecimento mensal.",
     seller: sellers[2],
@@ -332,7 +341,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 3100,
     pricePerKg: 1.35,
-    image: "/img-pet.jpeg",
+    image: imgPet,
     shortDescription: "PET verde de aparas de frascos cosméticos, pré-lavado e selecionado. Lote premium com rastreabilidade.",
     description: "Aparas de PET verde provenientes exclusivamente de linha de produção de frascos cosméticos. Material pré-lavado com água quente, livre de rótulos e adesivos. Viscosidade intrínseca: ~0.72 dL/g (laudo disponível). Cor uniforme verde esmeralda. Embalado em fardos de 400 kg com identificação de lote. Adequado para extrusão de filamentos de alta qualidade ou garrafas recicladas. Lote único com rastreabilidade completa.",
     seller: sellers[3],
@@ -346,7 +355,7 @@ const listings = [
     condition: "limpo",
     quantityKg: 720,
     pricePerKg: 2.8,
-    image: "/img-acrilico.jpeg",
+    image: imgAcrilico,
     shortDescription: "Acrílico (PMMA) transparente de aparas de corte CNC de indústria de sinalização. Espessuras variadas.",
     description: "Aparas e recortes de PMMA (polimetilmetacrilato) transparente provenientes de indústria de sinalização e displays comerciais. Mix de espessuras (3, 5 e 8 mm). Sem mistura com policarbonato. Material limpo, sem películas protetoras. Adequado para moagem e reprocessamento em extrusora. Volume disponível: 720 kg. Geração irregular (lotes avulsos).",
     seller: sellers[5],
@@ -360,7 +369,7 @@ const listings = [
     condition: "contaminado",
     quantityKg: 5800,
     pricePerKg: 0.7,
-    image: "/img-pead.jpeg",
+    image: imgPead,
     shortDescription: "PEAD colorido de sopro (amarelo, azul, preto) com resíduos internos de produtos químicos. Para lavagem.",
     description: "Aparas e carcaças de PEAD colorido (bombonas, galões e embalagens) provenientes de fabricante de produtos de limpeza e solventes. Material com contaminação interna de resíduos do produto original (requer lavagem industrial). Cores: amarelo (60%), azul (25%), preto (15%). Preço baixo compensa investimento em lavagem. Volume elevado com disponibilidade imediata. Não indicado para alimentício após reciclagem.",
     seller: sellers[2],
@@ -384,7 +393,7 @@ const conditionLabels = {
   contaminado: "Contaminado",
   misto: "Misto"
 };
-const $$splitComponentImporter$2 = () => import("./_productId-CVykVAib.js");
+const $$splitComponentImporter$2 = () => import("./_productId-DOP7laXJ.js");
 const Route$2 = createFileRoute("/products/$productId")({
   component: lazyRouteComponent($$splitComponentImporter$2, "component"),
   loader: async ({

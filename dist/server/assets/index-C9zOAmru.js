@@ -1,6 +1,6 @@
 import { jsxs, jsx, Fragment } from "react/jsx-runtime";
-import { memo, useState } from "react";
-import { c as conditionLabels, l as listings, s as sellers } from "./router-BbJrEQoA.js";
+import { memo, useMemo, useState } from "react";
+import { c as conditionLabels, l as listings, s as sellers } from "./router-DWFSow_W.js";
 import { Link } from "@tanstack/react-router";
 import { C as ContactModal } from "./ContactModal-Bx-mmTO4.js";
 const ALL_TYPES = ["PET", "PEAD", "PP", "PEBD", "PVC", "PS", "ABS", "NYLON", "ACRILICO"];
@@ -188,6 +188,7 @@ const ListingCard = memo(function ListingCard2({ listing, onContact }) {
   ] });
 });
 function HeroSection({}) {
+  const totalQuantity = useMemo(() => (listings.reduce((s, l) => s + l.quantityKg, 0) / 1e3).toFixed(0), []);
   return /* @__PURE__ */ jsx("section", { className: "hero-section", children: /* @__PURE__ */ jsxs("div", { className: "hero-inner", children: [
     /* @__PURE__ */ jsx("div", { className: "hero-eyebrow", children: "Polo Industrial de Manaus · Economia Circular" }),
     /* @__PURE__ */ jsxs("h1", { className: "hero-title", children: [
@@ -207,7 +208,7 @@ function HeroSection({}) {
       ] }),
       /* @__PURE__ */ jsxs("div", { className: "hero-stat", children: [
         /* @__PURE__ */ jsxs("span", { className: "stat-value", children: [
-          (listings.reduce((s, l) => s + l.quantityKg, 0) / 1e3).toFixed(0),
+          totalQuantity,
           "t"
         ] }),
         /* @__PURE__ */ jsx("span", { className: "stat-label", children: "toneladas disponíveis" })
@@ -300,6 +301,7 @@ function CTAs() {
   ] });
 }
 function MarketplaceHome() {
+  console.log("MarketplaceHome render");
   const [search, setSearch] = useState("");
   const [selectedTypes, setSelectedTypes] = useState([]);
   const [selectedConditions, setSelectedConditions] = useState([]);
@@ -316,14 +318,14 @@ function MarketplaceHome() {
     setMinQty("");
     setMaxPrice("");
   };
-  const filtered = listings.filter((l) => {
+  const filtered = useMemo(() => listings.filter((l) => {
     if (search && !l.title.toLowerCase().includes(search.toLowerCase()) && !l.plasticType.toLowerCase().includes(search.toLowerCase()) && !l.shortDescription.toLowerCase().includes(search.toLowerCase()) && !l.tags.some((t) => t.toLowerCase().includes(search.toLowerCase()))) return false;
     if (selectedTypes.length && !selectedTypes.includes(l.plasticType)) return false;
     if (selectedConditions.length && !selectedConditions.includes(l.condition)) return false;
     if (minQty && l.quantityKg < parseInt(minQty)) return false;
     if (maxPrice && l.pricePerKg > parseFloat(maxPrice)) return false;
     return true;
-  });
+  }), [search, selectedTypes, selectedConditions, minQty, maxPrice]);
   return /* @__PURE__ */ jsxs("main", { className: "marketplace-main", children: [
     /* @__PURE__ */ jsx(HeroSection, { onTypeSelect: (type) => {
       setActiveTab("listings");

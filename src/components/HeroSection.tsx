@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import { Link } from '@tanstack/react-router'
 import listings, { sellers } from '@/data/listings'
 import type { PlasticType } from '@/data/listings'
@@ -8,6 +9,7 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ }: HeroSectionProps) {
+  const totalQuantity = useMemo(() => (listings.reduce((s, l) => s + l.quantityKg, 0) / 1000).toFixed(0), [])
   return (
     <section className="hero-section">
       <div className="hero-inner">
@@ -29,7 +31,7 @@ export function HeroSection({ }: HeroSectionProps) {
           </div>
           <div className="hero-stat">
             <span className="stat-value">
-              {(listings.reduce((s, l) => s + l.quantityKg, 0) / 1000).toFixed(0)}t
+              {totalQuantity}t
             </span>
             <span className="stat-label">toneladas disponíveis</span>
           </div>

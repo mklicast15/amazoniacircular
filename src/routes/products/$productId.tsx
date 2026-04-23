@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import { Link, createFileRoute } from '@tanstack/react-router'
 import listings, { plasticTypeLabels, conditionLabels } from '@/data/listings'
 import { ContactModal } from '@/components/ContactModal'
@@ -15,9 +15,9 @@ export const Route = createFileRoute('/products/$productId')({
 function ListingDetail() {
   const listing = Route.useLoaderData()
   const [contactOpen, setContactOpen] = useState(false)
-  const related = listings
+  const related = useMemo(() => listings
     .filter((l) => l.plasticType === listing.plasticType && l.id !== listing.id)
-    .slice(0, 3)
+    .slice(0, 3), [listing.plasticType, listing.id])
 
   return (
     <main className="detail-main">
