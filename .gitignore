@@ -6,3 +6,4 @@ node_modules
 # AI agent local metadata
 .agents
 .claude
+.codex
