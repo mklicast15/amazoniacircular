@@ -48,18 +48,12 @@ function SiteHeader() {
         <a href="/sobre" className="nav-link">Sobre nós</a>
       </nav>
       <div className="header-cta">
-        <a href="/anuncie" className="btn-header-cta">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M7 3v8M3 7h8" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
-          </svg>
-          Publicar Anúncio
-        </a>
         <span className="header-location">
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
             <path d="M7 1a4 4 0 0 1 4 4c0 3.5-4 8-4 8S3 8.5 3 5a4 4 0 0 1 4-4z" stroke="currentColor" strokeWidth="1.4"/>
             <circle cx="7" cy="5" r="1.5" stroke="currentColor" strokeWidth="1.4"/>
           </svg>
-          Manaus — PIM
+          Polo Industrial de Manaus - Manaus/Amazonas
         </span>
       </div>
     </header>
@@ -90,11 +84,6 @@ function SiteFooter() {
             <h4 className="footer-col-title">Institucional</h4>
             <a href="/sobre" className="footer-link">Sobre nós</a>
             <a href="/documentacao-amazonia-circular.pdf" target="_blank" rel="noopener noreferrer" className="footer-link">Documentação</a>
-          </div>
-          <div className="footer-links-col">
-            <h4 className="footer-col-title">Localização</h4>
-            <p className="footer-info-text">Manaus — Amazonas</p>
-            <p className="footer-info-text">Polo Industrial de Manaus</p>
           </div>
         </div>
         <div className="footer-bottom">

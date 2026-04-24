@@ -60,8 +60,8 @@ function AnunciePage() {
   return (
     <main className="page-main">
       <div className="page-container">
-        <div className="page-hero-banner">
-          <img src="/amazonia-banner.jpg" alt="Amazônia Circular" className="page-hero-img" />
+        <div className="page-hero-banner anuncie-hero">
+          <img src="/amazonia-banner-hd.jpg" alt="Amazônia Circular" className="page-hero-img" />
           <div className="page-hero-overlay">
             <h1 className="page-hero-title">Publique seu Anúncio</h1>
             <p className="page-hero-sub">
@@ -132,7 +132,6 @@ function AnunciePage() {
                   <li>Mencione certificações ou laudos disponíveis</li>
                 </ul>
               </div>
-              <img src="/amazonia-hero-bg.jpg" alt="Economia Circular" className="form-sidebar-img" />
             </div>
 
             <form onSubmit={handleSubmit} className="page-form" name="novo-anuncio" method="POST" data-netlify="true" netlify-honeypot="bot-field">

@@ -58,7 +58,7 @@ function CadastroPage() {
   return (
     <main className="page-main">
       <div className="page-container">
-        <div className="page-hero-banner">
+        <div className="page-hero-banner cadastro-hero">
           <img src="/amazonia-hero-bg.jpg" alt="Amazônia Circular" className="page-hero-img" />
           <div className="page-hero-overlay">
             <h1 className="page-hero-title">Faça parte da Amazônia Circular</h1>
@@ -152,7 +152,6 @@ function CadastroPage() {
               <button className="btn-secondary btn-full" onClick={() => setUserType(null)}>
                 Voltar à seleção de perfil
               </button>
-              <img src="/amazonia-banner.jpg" alt="Amazônia Circular" className="form-sidebar-img" />
             </div>
 
             <form onSubmit={handleSubmit} className="page-form" name="cadastro" method="POST" data-netlify="true" netlify-honeypot="bot-field">

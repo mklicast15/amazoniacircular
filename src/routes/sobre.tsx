@@ -126,7 +126,7 @@ function SobrePage() {
           </section>
 
           <section className="sobre-banner-section">
-            <img src="/amazonia-banner.jpg" alt="Amazônia Circular — Transformando resíduos em oportunidades" className="sobre-banner-img" />
+            <img src="/amazonia-banner-hd.jpg" alt="Amazônia Circular — Transformando resíduos em oportunidades" className="sobre-banner-img" />
           </section>
 
           <section className="sobre-doc-section">
