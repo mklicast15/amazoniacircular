@@ -10,12 +10,3 @@ Empresas enfrentam dificuldades na comercialização de aparas devido à baixa v
 
 ## 💡 Solução
 Desenvolvimento de uma plataforma digital que centraliza anúncios e facilita a negociação entre empresas do setor.
-
-## 🛠️ Tecnologias utilizadas
-- TypeScript
-- HTML / CSS
-- Vite
-- Netlify
-
-## 🌐 Acesse o projeto
-https://amazoniacircular.netlify.app
